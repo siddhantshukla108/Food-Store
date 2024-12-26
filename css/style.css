@@ -1,0 +1,262 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+body{
+    /* background-color: rgb(255, 192, 203); */
+    background-color: rgb(255, 192, 203);
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/*variables*/
+:root{
+    --navbar-height:59px;
+}
+
+#logo img{
+    height: 80px;
+        margin: 3px 6px;
+       
+    }
+
+    /* Navigation Section*/
+#navbar{
+    display: flex;
+    align-items: center;
+    height: 90px;
+    top: 0px;
+    position: sticky;
+    /* justify-content: center; */
+}
+
+
+
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px ;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.2;
+
+}
+#navbar ul{
+    display: flex;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+#navbar ul li{
+      
+    list-style: none;
+    font-size: 1.3rem;
+}
+#navbar ul li a{
+      display: block;
+    padding:3px 9px ;
+    border-radius: 20px;
+    color: black;
+    text-decoration: none;
+    color: white;
+}
+#navbar ul li a:hover{
+    
+    color: blueviolet;
+    background-color:aqua;
+}
+
+/*Home Section*/
+
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 562px;
+    justify-content: center;
+    align-items: center;
+}
+#home::before{
+    content: "";
+    /* background-image:url('images/home1.jpg') no-repeat center center/cover; */
+    /* background-color: rgb(13, 119, 119); */
+    background: url(../images/home2.jpg) no-repeat center center/cover ;
+    position: absolute;
+    height: 100%;
+    top: 0px;
+    left: 0px ;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.8
+}
+#home h1{
+    color: white;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#home p{
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* services section*/
+
+ #services-container{
+    /* background-color: rgb(255, 192, 203); */
+    background: url(../images/home2.jpg)  ;
+} 
+#services{
+    margin: 34px;
+    display: flex;
+}
+
+#services .box{
+    border: 2px solid brown;
+    padding: 34px;
+    margin: 3px 11px;
+    border-radius: 23px;
+    background-color: rgb(234, 239, 241);
+}
+#services .box img{
+   height: 150px;
+   width: 150px;
+   display: block;
+   margin: auto;
+
+}
+/* #services{}
+#services{}
+#services{} */
+
+/*client-section*/
+.client-item img{
+height: 90px;
+width: 90px;
+}
+
+#client-section{
+
+position: relative;
+
+}
+
+
+#client-section::before{
+content: "";
+position: absolute;
+width: 100%;
+height: 100%;
+background: url(../images/1.webp) no-repeat center center/cover  ;
+z-index: -1;
+opacity: 0.4;
+}
+
+.primary-center{
+text-align: center;
+font-size: 44px;
+font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.client-item{
+    padding: 34px;
+
+}
+#clients img{
+    height: 124;
+}
+/*Contact Section*/
+#contact{
+    position: relative;
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+    background: url(../images/socialmedia2.webp) no-repeat center center/cover ;
+    
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+#contact-box input,
+#contact-box textarea{
+width: 100%;
+padding: 0.5rem;
+border-radius: 9px;
+font-size: 1.1rem;
+
+}
+
+#contact-box form{
+    width: 40%;
+}
+
+#contact-box label{
+    font-size: 1.3rem;
+    font-family: sans-serif;
+}
+
+/*footer*/
+footer{
+     background-color: rgb(41, 95, 150);;
+    color: white;
+    padding: 9px 20px;
+    cursor: pointer;
+}
+
+/* Utility Class*/
+.h-primary-center{
+text-align: center;
+font-size: 44px;
+font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.h-primary{
+    font-size: 2.8rem;
+    padding: 12px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.h-secondary{
+    font-size: 2.3rem;
+    padding: 12px ;
+   font-family: cursive;
+}
+
+.btn{
+    padding: 6px 20px;
+    border: 2px solid white;
+    border-radius: 7px;
+    background-color: brown;
+    color: white;
+    margin: 17px;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.center{
+text-align: center;
+}
+
+
+
+/*footer css*/
+
